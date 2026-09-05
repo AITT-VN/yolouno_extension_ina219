@@ -1,7 +1,7 @@
 from machine import Pin, SoftI2C
 from ina219 import INA219
 from logging import INFO
-import utime  # Nhập module utime để sử dụng hàm sleep
+import time  # Nhập module time để sử dụng hàm sleep
 
 # SHUNT_OHMS = 0.1
 
@@ -13,4 +13,4 @@ while True:
     print(ina.current())
     print(ina.power())
     
-    utime.sleep(5)
+    time.sleep(5)
